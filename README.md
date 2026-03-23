@@ -1,4 +1,4 @@
-# WA Mass Sender Pro (2026)
+# Whatsapp Mass Sender Pro (2026)
 
 A high-performance, browser-native automation engine for WhatsApp Web, engineered to bypass SPA navigation hurdles and automate lead outreach with human-like behavior.
 
