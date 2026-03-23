@@ -25,3 +25,17 @@ To demonstrate the engineering behind the tool, here are the core logic patterns
 ```javascript
 const matches = rawText.match(/\+?\d[\d\s-]{8,14}\d/g) || [];
 const cleanNumbers = [...new Set(matches.map(n => n.replace(/[\s-]/g, '')))];
+
+
+### 2. MutationObserver Sync
+This ensures the automation engine waits for the WhatsApp Web "Send" button to be fully rendered in the DOM before attempting an interaction.
+```javascript
+const observer = new MutationObserver((mutations) => {
+    const sendBtn = document.querySelector('button[aria-label="Send"]');
+    if (sendBtn) {
+        // Trigger Event Dispatcher logic
+        observer.disconnect(); // Stop watching once found
+    }
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
