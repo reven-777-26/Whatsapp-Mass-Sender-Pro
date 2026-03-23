@@ -16,7 +16,7 @@ A high-performance, browser-native automation engine for WhatsApp Web, engineere
 * **Event Dispatcher:** Solves the "Draft-only" bug using a dual-trigger system (ARIA-label targeting + KeyboardEvent dispatches).
 
 ## 📸 UI Preview
-![UI Preview](./preview.png)
+![UI Preview](./Screnshot_1.jpg)
 
 ## 💻 Technical Logic (Snippets)
 To demonstrate the engineering behind the tool, here are the core logic patterns:
